@@ -3,8 +3,9 @@
 import sys
 import serial
 
-if len(sys.argv)<3:
+if len(sys.argv)!=3:
     print("Usage:\n\t{} <port> <baudrate>".format(sys.argv[0]))
+    sys.exit(1)
 
 ser = serial.Serial(port=sys.argv[1],
                     baudrate=int(sys.argv[2]),

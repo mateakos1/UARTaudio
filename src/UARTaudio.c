@@ -26,14 +26,16 @@ int main(int argc, char **argv) {
 	uint8_t b;
 	uint8_t n;
 
-	if (argc < 3)
+	if (argc != 3) {
 		printf("Usage:\n\t%s <sample rate> <baud rate>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
 
 	time_inc = (uint32_t)((((uint64_t) atoi(argv[1])) << FRACTION_BITS) / ((uint64_t)atoi(argv[2])));
 
 	prev_err = 0;
 	n = 0;
-    timer = TMR_INT_MASK;
+	timer = TMR_INT_MASK;
 
 	while (1) {
 		//read next sample
