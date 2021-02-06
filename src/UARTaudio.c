@@ -3,7 +3,7 @@
  Name        : UARTaudio.c
  Author      : Akos Mate
  Version     : 0.1
- Copyright   : You can copy or do wathever you want
+ Copyright   : You can copy or do whatever you want.
  Description : Program to convert a stream of 16 bit mono audio samples into
                a byte-stream to play through a serial port.
  ============================================================================
