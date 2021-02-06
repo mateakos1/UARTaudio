@@ -1,10 +1,10 @@
 # UARTaudio
 A program to play mono audio through a serial port
 
-## Compilation:\
+## Compilation:
 ``$ make all``
 
-## Usage:\
+## Usage:
 See the UARTplay.sh script as an example.\
 Besides the compiled program, the script requires ffmpeg and python with pyserial installed.
 
