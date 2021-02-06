@@ -28,8 +28,8 @@ int main(int argc, char **argv) {
 
 	if (argc != 3) {
 		printf("Usage:\n\t%s <sample rate> <baud rate>\n", argv[0]);
-        return EXIT_FAILURE;
-    }
+		return EXIT_FAILURE;
+	}
 
 	time_inc = (uint32_t)((((uint64_t) atoi(argv[1])) << FRACTION_BITS) / ((uint64_t)atoi(argv[2])));
 
